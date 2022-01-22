@@ -1,5 +1,5 @@
-import Kafka from 'node-rdkafka';
-import eventType from '../eventType.js';
+const Kafka = require('node-rdkafka');
+const eventType = require('../eventType.js');
 
 var consumer = new Kafka.KafkaConsumer({
   'group.id': 'kafka',
